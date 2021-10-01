@@ -1,4 +1,4 @@
-# todo-app
+# task-app
 
 ## Project setup
 ```

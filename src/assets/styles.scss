@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+
+/// LIGHT
+
+h5 {
+  color: hsl(0, 0%, 98%);
+  color: hsl(236, 33%, 92%);
+  color: hsl(233, 11%, 84%);
+  color: hsl(236, 9%, 61%);
+  color: hsl(235, 19%, 35%)
+}
+
+/// DARK
+
+h6 {
+  color: hsl(235, 21%, 11%);
+  color: hsl(235, 24%, 19%);
+  color: hsl(234, 39%, 85%);
+  color: hsl(236, 33%, 92%); //hover
+  color: hsl(234, 11%, 52%);
+  color: hsl(233, 14%, 35%);
+  color: hsl(237, 14%, 26%);
+}
+
+
+:root {
+  --light-bg: hsl(0, 0%, 95%);
+  --light-text: hsl(235, 19%, 35%);
+  --dark-bg: hsl(235, 24%, 19%);
+  --dark-text: hsl(234, 39%, 85%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+*:not(input) {
+  user-select: none;
+}
+
+
+body {
+  background-color: hsl(235, 21%, 11%);
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: hsl(236, 33%, 92%);
+  letter-spacing: 18px;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+}
+
+.header, .tasks {
+  width: 50vw;
+  margin: auto;
+}
+
+.header {
+  margin-top: 85px;
+}
+
+.check-btn {
+  cursor: pointer;
+  padding: 24px 20px 24px 18px;
+  text-align: center;
+}
+
+
+.completed-icon svg {
+  display: none;
+}
+
+.check-btn-circle {
+  border-radius: 50px;
+  border: 1px solid hsla(234, 11%, 52%, 0.6);
+  width: 27px;
+  height: 27px;
+  background: transparent;
+}
+
+input, .task-l {
+  padding: 20px 25px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-left: 0;
+  //box-shadow: 0 2px 5px 0 hsla(235, 24%, 12%, .4);
+}
+
+
+///// DARK
+
+.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark .completed .check-btn-circle {
+  background: #3e4564;
+}
+
+// SCROLLBAR
+.dark {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(235, 24%, 19%) hsl(235, 24%, 19%);
+}
+
+.dark::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dark::-webkit-scrollbar-track {
+  background: hsl(235, 24%, 19%);
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background-color: hsl(235, 24%, 19%);
+}
+
+
+///// LIGHT
+
+.light {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+.tasks-content .light {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  border-color: hsl(233, 11%, 84%);
+}
+
+.light .completed .check-btn-circle {
+  background: #bfc1d0;
+}
+
+// SCROLLBAR
+.light {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(0, 0%, 95%) hsl(0, 0%, 95%);
+}
+
+.light::-webkit-scrollbar {
+  width: 4px;
+}
+
+.light::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.light::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 95%);
+}
